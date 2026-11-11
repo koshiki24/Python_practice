@@ -1,9 +1,13 @@
-for i in range(1,6):
-  for k in range(5-i,0,-1):
-    print(" ",end="")
-  for j in range(1,2*i):
-    if j == 1 or j == 2*i-1 or i == 5:
-      print("*",end="")
-    else:
-      print("_",end="")
-  print()
+print('''Group a list of words according to their length.Example: ["cat", "apple", "dog", "mango"] Expected groups: 3 -> ["cat", "dog"], 5 -> ["apple", "mango"]''')
+print("Group words according to their length")
+
+a = ["cat", "apple", "dog", "mango"]
+b = {}
+
+for i in range(len(a)):
+    count = a[i]
+
+    if count not in b:
+        b[count] = []
+    b[count].append(a[i])
+print(b)

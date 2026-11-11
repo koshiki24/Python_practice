@@ -1,0 +1,17 @@
+print("Find the first non-repeating character in a string.Example: aabbcddee → c")
+def non_repeating(a):
+    result = {}
+    for ch in a:
+        if ch in result:
+            result[ch]+=1
+        else:
+            result[ch] = 1
+    #print(result)
+    for ch in result:
+        if result[ch] == 1:
+            print(f"First non repeating character is {ch}")
+            break
+    else:
+         print("There is no repeating character")
+a = "aabccd"
+non_repeating(a)

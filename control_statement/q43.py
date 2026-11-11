@@ -1,7 +1,7 @@
 n = int(input("Enter binary number :"))
 decimal = 0
 power = 1
-while n >0:
+while n > 0:
     a = n%10
     decimal = decimal+a*power
     power = power*2

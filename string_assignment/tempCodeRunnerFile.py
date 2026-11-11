@@ -1,0 +1,1 @@
+Find all duplicate characters and their frequencies
